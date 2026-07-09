@@ -1,0 +1,19 @@
+from setuptools import setup
+
+setup(name='scDemux_arcasHLA',
+      version='0.1.1',
+      description='python implementation of scDemux_arcasHLA for HLA genotyping in multiplexd single-cell datasets',
+      url='https://github.com/m21camby/scDemux_arcasHLA',
+      author='Seung Kim',
+      author_email='seung.kim@paediatrics.ox.ac.uk',
+      license='MIT',
+      packages=['scDemux_arcasHLA'],
+      install_requires=[
+          "umitools"
+          "pandas",
+          "anndata",
+          "scanpy>=1.6.0",
+          "scipy",
+          "numpy",
+      ],
+      zip_safe=False)

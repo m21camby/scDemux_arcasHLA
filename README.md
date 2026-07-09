@@ -4,6 +4,16 @@
 The package provides a streamlined workflow for `HLA genotyping` of 5' single cell RNA-seq data specifically designed to validate sample demultiplexing results. By seamlessly integrating UMI-tools and arcasHLA, the tool offers an intuitive pipeline to cross-verify and confirm your multiplexed sample assignments.
 
 ***
+## How to install
+
+```
+git clone https://github.com/m21camby/scDemux_arcasHLA.git
+cd scDemux_arcasHLA
+pip install .
+
+```
+
+***
 
 ## How to use
 
