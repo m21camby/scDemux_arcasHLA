@@ -10,7 +10,12 @@ The package provides a streamlined workflow for `HLA genotyping` of 5' single ce
 git clone https://github.com/m21camby/scDemux_arcasHLA.git
 cd scDemux_arcasHLA
 pip install .
+conda install bioconda::bedtools
+```
 
+2nd method
+```
+conda env create -f environment.yml
 ```
 
 ***
