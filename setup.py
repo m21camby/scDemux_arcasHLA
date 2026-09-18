@@ -11,7 +11,6 @@ setup(name='scDemux_arcasHLA',
       install_requires=[
           "umi_tools",
           "pandas",
-          "bedtools==2.31.1",
           "biopython==1.83",
           "coreutils==9.4",
           "kallisto==0.44.0",

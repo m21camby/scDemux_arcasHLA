@@ -1,0 +1,23 @@
+name: scdemux_arcashla
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python==3.8
+  - umi_tools
+  - pandas
+  - bedtools==2.31.1  
+  - anndata
+  - scanpy>=1.6.0
+  - scipy
+  - numpy
+  - pip:
+    - biopython==1.83
+    - coreutils==9.4
+    - kallisto==0.44.0
+    - pigz==2.8
+    - pyarrow==15.0.0
+    - pytest==8.0.0
+    - samtools==1.19.2     
+    - -e .
