@@ -4,7 +4,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python==3.8
+  - python=3.8
   - umi_tools
   - pandas
   - bedtools==2.31.1  
