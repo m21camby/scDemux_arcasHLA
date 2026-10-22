@@ -4,19 +4,19 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.9
+  - python=3.10
   - umi_tools
   - pandas
+  - biopython  
   - bedtools=2.31.1
-  - kallisto=0.44.0
-  - samtools=1.19.2  
+  - kallisto
+  - samtools  
   - anndata
   - scanpy>=1.9.0
   - scipy
   - numpy
+  - pigz  
   - pip:
-    - biopython==1.83
-    - pigz==2.8
     - pyarrow==15.0.0
     - pytest==8.0.0     
     - -e .
