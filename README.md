@@ -9,13 +9,17 @@ The package provides a streamlined workflow for `HLA genotyping` of 5' single ce
 ```
 git clone https://github.com/m21camby/scDemux_arcasHLA.git
 cd scDemux_arcasHLA
-pip install .
-conda install bioconda::bedtools
+conda env create -f environment.yml
 ```
 
-2nd method
+This is C++ standard library version mismatch issue 
 ```
-conda env create -f environment.yml
+ImportError: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found
+```
+
+It occurs when C++ extension requires a newer version than the one installed in your operating system's global `lib64` directory. You can solve by below
+```
+export LD_PRELOAD=$CONDA_PREFIX/lib/libstdc++.so.6
 ```
 
 ***
